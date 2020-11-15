@@ -4,11 +4,11 @@
 
 namespace fs = std::filesystem;
 
-void resize_image(const std::string & inFilename, const std::string & outFilename)
+void resize_image(const std::string & inFilename, const std::string & outFilename, cv::Size new_size)
 {
     cv::Mat img = cv::imread(inFilename);
     cv::imshow("Now Processing...", img);
-    cv::resize(img, img, cv::Size(256,256));
+    cv::resize(img, img, new_size);
     cv::imwrite(outFilename, img);
 }
 
@@ -40,6 +40,11 @@ int main(int argc, char *argv[])
     //} else {
     //    std::cout << "DST: " << output_path << std::endl;
     //}
+    int x = 256, y = 256;
+    std::cout << "Please assign aimed image size: \n";
+    std::cout << "Width : "; std::cin >> x;
+    std::cout << "Height: "; std::cin >> y;
+    cv::Size new_size(x, y);
     cv::namedWindow("Now Processing...", cv::WINDOW_NORMAL);
     for (fs::recursive_directory_iterator it(input_path); it != fs::end(it); ++it)
     {
@@ -51,7 +56,7 @@ int main(int argc, char *argv[])
                 try {
                     std::string in = it->path().string();
                     std::string out = it->path().string();
-                    resize_image(in,out);
+                    resize_image(in, out, new_size);
                 }
                 catch (cv::Exception & cv_except) {
                     std::cerr << cv_except.what() << std::endl;
