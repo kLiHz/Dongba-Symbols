@@ -26,6 +26,8 @@ Also check these links:
 
 👉 [Naxi language and scripts (Dongba, Geba and Latin) (omniglot.com)](https://omniglot.com/writing/naxi.htm)
 
+👉 [纳西东巴文：象形程度很高(图)](http://city.sina.com.cn/travel/t/2011-07-21/101020206.html)
+
 I also found a **repo**/website which has an introduction and index for Dongba Script on **GitHub**: 
 
 👉 [duoduo-lab/duoduo-lab.github.io: Project website](https://github.com/duoduo-lab/duoduo-lab.github.io)
