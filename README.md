@@ -44,11 +44,6 @@ I also found a **repo**/website which has an introduction and index for Dongba S
 
   - [eco2020/pictographs-survive-in-a-chinese-tourist-town.md at cch123/eco2020 (github.com)](https://github.com/cch123/eco2020/blob/526aae03dfd56f85ea556b25c90c8e17189bb37d/2020-10-10/China/pictographs-survive-in-a-chinese-tourist-town.md)
 
-  - [TheEconomist2020/Pictographs survive in a Chinese tourist town.md at fredliu168/TheEconomist2020 (github.com)](https://github.com/fredliu168/TheEconomist2020/blob/b3fc9ac97a73e91daefb1c3a3c50054d59ae86ec/2020-10-10/China/Pictographs survive in a Chinese tourist town.md)
-
-  
-
-
 
 ## About Encoding
 
