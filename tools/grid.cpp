@@ -9,11 +9,11 @@ int main(int argc, char* argv[]) {
     auto keys =
             "{ help h usage |             | Print this message.         }"
             "{ display-only |             | Display by 'cv::imshow'.    }"
-            "{ thickness    | 1           | Grid line thickness in px.  }"
-            "{ length       | 200         | Length of a side in px.     }"
-            "{ cols         | 4           | Number of squares in a row. }"
-            "{ rows         | 5           | Rows of squares.            }"
-            "{ filename     | grid.png    | Output filename.            }"
+            "{ thickness b  | 1           | Grid line thickness in px.  }"
+            "{ length l     | 200         | Length of a side in px.     }"
+            "{ cols w       | 4           | Number of squares in a row. }"
+            "{ rows h       | 5           | Rows of squares.            }"
+            "{ filename f   | grid.png    | Output filename.            }"
             "{ fg           | 0   255 0   | Grid line color (RGB).      }"
             "{ bg           | 255 255 255 | Background color (RGB).     }"
             ;
