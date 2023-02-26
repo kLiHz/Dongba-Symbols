@@ -62,13 +62,17 @@ int main(int argc, char* argv[]) {
     auto canvas = cv::Mat(cv::Size(width, height), CV_8UC3, background);
 
     for (int i = 0; i <= rows; i += 1) {
-        auto y = (length + lineWidth) * i + thickness - 1;
-        cv::line(canvas, {0, y}, {width, y}, color, thickness);
+        auto y = (length + lineWidth) * i;
+        auto tl = cv::Point {0, y};
+        auto br = cv::Point {width, y + lineWidth - 1};
+        cv::rectangle(canvas, tl, br, color, -1);
     }
 
     for (int i = 0; i <= cols; i += 1) {
-        auto x = (length + lineWidth) * i + thickness - 1;
-        cv::line(canvas, {x, 0}, {x, height}, color, thickness);
+        auto x = (length + lineWidth) * i;
+        auto tl = cv::Point {x, 0};
+        auto br = cv::Point {x + lineWidth - 1, height};
+        cv::rectangle(canvas, tl, br, color, -1);
     }
 
     if (displayOnly) {
