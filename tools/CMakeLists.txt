@@ -4,6 +4,7 @@ project(tools)
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(OpenCV REQUIRED)
+find_package(Boost REQUIRED COMPONENTS program_options)
 
 add_executable(grid "grid.cpp")
-target_link_libraries(grid ${OpenCV_LIBS})
+target_link_libraries(grid ${OpenCV_LIBS} Boost::program_options)
