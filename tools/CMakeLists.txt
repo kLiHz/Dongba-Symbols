@@ -10,3 +10,6 @@ add_executable(rename "rename.cpp")
 
 add_executable(grid "grid.cpp")
 target_link_libraries(grid ${OpenCV_LIBS} Boost::program_options)
+
+add_executable(cut "cut.cpp")
+target_link_libraries(cut ${OpenCV_LIBS} Boost::program_options)
